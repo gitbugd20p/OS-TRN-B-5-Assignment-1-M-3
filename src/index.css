@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h2 {
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  .dream-int-bg {
+    @apply w-full bg-center bg-no-repeat;
+    background-image: url("./assets/contact_bg_img-scaled-1.jpg");
+    background-size: 100% 100%;
+  }
+
+  .user-input {
+    @apply rounded-ten flex items-center gap-3 border-2 border-solid border-gray-300 p-5 transition focus-within:border-sky-600;
+  }
+
+  .on-card {
+    @apply flex cursor-pointer flex-col items-center gap-4 px-12 py-2 text-center transition duration-300 hover:border-b-4 hover:border-secondary hover:shadow-xl;
+  }
+  .tic {
+    @apply border-r-2 border-gray-800 p-2 md:px-4;
+  }
+}
+
+@layer utilities {
+  .rounded-ten {
+    @apply rounded-[10px];
+  }
+}
